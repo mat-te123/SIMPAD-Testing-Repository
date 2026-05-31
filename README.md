@@ -66,19 +66,19 @@
    hkan baris baru pada file /test/main sebagai penanda jika ini adalah branch baru.
 
    ```java
-       @Test
-public void BranchTesting(){
-   WebDriver driver = new ChromeDriver();
-   driver.manage().window().maximize();
-   driver.get("https://simpad-frontend.vercel.app/");
-   WebElement Hero = driver.findElement(By.id("Upper"));
+        @Test
+   public void BranchTesting(){
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://simpad-frontend.vercel.app/");
+        WebElement Hero = driver.findElement(By.id("Upper"));
 
-   if(Hero.isDisplayed() && Hero.isEnabled()){
-      System.out.println("Edan");
-   } else {
-      System.out.println("Error Lek");
-   }
-}
+        if(Hero.isDisplayed() && Hero.isEnabled()){
+            System.out.println("Edan");
+        } else {
+            System.out.println("Error Lek");
+        }
+    }
    ```
 
    selanjutnya kita dapat melakukan commit dan push. untuk melakukan commit dapat diakses melalui menu kiri dibawah ikon
