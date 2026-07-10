@@ -20,4 +20,19 @@ public class Main {
             System.out.println("Error");
         }
     }
+
+    @Test
+    public void BranchTesting(){
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://simpad-frontend.vercel.app/");
+        WebElement Hero = driver.findElement(By.id("Upper"));
+
+        if(Hero.isDisplayed() && Hero.isEnabled()){
+            System.out.println("Edan");
+        } else {
+            System.out.println("Error Lek");
+        }
+    }
 }
+
